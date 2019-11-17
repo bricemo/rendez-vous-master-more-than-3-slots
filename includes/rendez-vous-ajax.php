@@ -176,6 +176,61 @@ function rendez_vous_ajax_create() {
 			$timestamp = strtotime( $date['mysql'] . ' ' . $date['hour3'] );
 			$maydates[ $timestamp ] = array();
 		}
+		
+		if ( ! empty( $date['hour4'] ) ) {
+
+			if( ! preg_match( '/^[0-2]?[0-9]:[0-5][0-9]$/', $date['hour4'] ) ) {
+				$maydates_errors[] = $date['hour4'];
+				continue;
+			}
+
+			$timestamp = strtotime( $date['mysql'] . ' ' . $date['hour4'] );
+			$maydates[ $timestamp ] = array();
+		}
+
+		if ( ! empty( $date['hour5'] ) ) {
+
+			if( ! preg_match( '/^[0-2]?[0-9]:[0-5][0-9]$/', $date['hour5'] ) ) {
+				$maydates_errors[] = $date['hour5'];
+				continue;
+			}
+
+			$timestamp = strtotime( $date['mysql'] . ' ' . $date['hour5'] );
+			$maydates[ $timestamp ] = array();
+		}
+
+		if ( ! empty( $date['hour6'] ) ) {
+
+			if( ! preg_match( '/^[0-2]?[0-9]:[0-5][0-9]$/', $date['hour6'] ) ) {
+				$maydates_errors[] = $date['hour6'];
+				continue;
+			}
+
+			$timestamp = strtotime( $date['mysql'] . ' ' . $date['hour6'] );
+			$maydates[ $timestamp ] = array();
+		}
+
+		if ( ! empty( $date['hour7'] ) ) {
+
+			if( ! preg_match( '/^[0-2]?[0-9]:[0-5][0-9]$/', $date['hour7'] ) ) {
+				$maydates_errors[] = $date['hour7'];
+				continue;
+			}
+
+			$timestamp = strtotime( $date['mysql'] . ' ' . $date['hour7'] );
+			$maydates[ $timestamp ] = array();
+		}
+
+		if ( ! empty( $date['hour8'] ) ) {
+
+			if( ! preg_match( '/^[0-2]?[0-9]:[0-5][0-9]$/', $date['hour8'] ) ) {
+				$maydates_errors[] = $date['hour8'];
+				continue;
+			}
+
+			$timestamp = strtotime( $date['mysql'] . ' ' . $date['hour8'] );
+			$maydates[ $timestamp ] = array();
+		}
 	}
 
 	// Check duration format
